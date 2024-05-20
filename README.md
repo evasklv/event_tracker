@@ -85,7 +85,6 @@ Ensure the `.env` file is created for usage in `sql_part.py` and the following e
 Install the required Python modules using pip3:
 
 ```sh
-```
 pip3 install aiohttp requests requests_cache certifi mysql-connector-python flask apscheduler python-dotenv pytest
 ```
 
