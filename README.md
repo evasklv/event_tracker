@@ -64,7 +64,6 @@ Contains the rest of the application logic:
 ## Setup Environment Variables
 Ensure the `.env` file is created for usage in `sql_part.py` and the following environment variables are set:
 
-```plaintext
 DB_HOST=localhost
 DB_USER=username
 DB_PASSWORD=password
@@ -140,10 +139,10 @@ python event_tracker.py
 
 ##TODO
  - Tests and possible refactoring
- = Opportunity to add authentication (GitHub restriction of 60 no auth to 5000 auth approach)
- = More modular code arrangement
- = Better automation
- = Using Docker and Kubernetes to deploy and manage the app
- = Thinking of scalability
+ - Opportunity to add authentication (GitHub restriction of 60 no auth to 5000 auth approach)
+ - More modular code arrangement
+ - Better automation
+ - Using Docker and Kubernetes to deploy and manage the app
+ - Thinking of scalability
 
 
