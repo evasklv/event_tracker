@@ -110,7 +110,7 @@ Example:
     ]
 }
 ```
-## Setup MySQL on Mac
+Setup MySQL on Mac
 
 ```sh
 brew install mysql
@@ -133,7 +133,7 @@ USE github_events_db;
 ```
 Running the Scripts
 
-## Run sql_part.py:
+Run sql_part.py:
 
 ```sh
 python sql_part.py
