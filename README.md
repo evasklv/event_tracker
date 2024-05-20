@@ -64,10 +64,10 @@ Contains the rest of the application logic:
 ## Setup Environment Variables
 Ensure the `.env` file is created for usage in `sql_part.py` and the following environment variables are set:
 
-DB_HOST=localhost
-DB_USER=username
-DB_PASSWORD=password
-DB_NAME=github_events_db
+ - `DB_HOST=localhost`
+ - `DB_USER=username`
+ - `DB_PASSWORD=password`
+ - `DB_NAME=github_events_db`
 
 ## Dependencies
 - `aiohttp`
@@ -87,8 +87,9 @@ Install the required Python modules using pip3:
 ```sh
 pip3 install aiohttp requests requests_cache certifi mysql-connector-python flask apscheduler python-dotenv pytest
 
-A repositories.json file in the same directory should have the following structure:
+### A repositories.json file in the same directory should have the following structure:
 
+```sh
 {
     "repositories": [
         "user1/repo1",
@@ -99,8 +100,8 @@ A repositories.json file in the same directory should have the following structu
     ]
 }
 
-Example:
-
+### Example:
+```sh
 {
     "repositories": [
         "Rydzaki/Final_project_teatAPI",
@@ -108,36 +109,49 @@ Example:
     ]
 }
 
-Setup MySQL on Mac
-Install MySQL:
+### Setup MySQL on Mac
 
+```sh
 brew install mysql
-Check your version (optional):
 
+### Check your version (optional):
+
+```sh
 mysql --version
-Login to MySQL:
 
+### Login to MySQL:
+
+```sh
 mysql -u username -p
-Create the database:
 
+### Create the database:
+
+```sh
 CREATE DATABASE github_events_db;
 USE github_events_db;
-Running the Scripts
-Run sql_part.py to set up the database:
 
+## Running the Scripts
+
+### Run sql_part.py:
+
+```sh
 python sql_part.py
-Verify the tables:
 
+### Verify the tables:
+
+```sh
 SHOW TABLES;
 DESCRIBE events;
 DESCRIBE statistics;
-Running the App
+
+### Running the App
 Ensure MySQL is running and accessible. Then run the app:
 
+```sh
 python event_tracker.py
 
 
-##TODO
+## TODO
  - Tests and possible refactoring
  - Opportunity to add authentication (GitHub restriction of 60 no auth to 5000 auth approach)
  - More modular code arrangement
