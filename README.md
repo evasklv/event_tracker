@@ -69,3 +69,44 @@ DB_HOST=localhost
 DB_USER=username
 DB_PASSWORD=password
 DB_NAME=github_events_db
+
+## Dependencies
+- `aiohttp`
+- `asyncio`
+- `requests`
+- `requests_cache`
+- `certifi`
+- `ssl`
+- `mysql.connector`
+- `flask`
+- `apscheduler`
+- `dotenv`
+- `pytest`
+
+Install the required Python modules using pip3:
+
+```sh
+pip3 install aiohttp requests requests_cache certifi mysql-connector-python flask apscheduler python-dotenv pytest
+
+A repositories.json file in the same directory should have the following structure:
+
+{
+    "repositories": [
+        "user1/repo1",
+        "user2/repo2",
+        "user3/repo3",
+        "user4/repo4",
+        "user5/repo5"
+    ]
+}
+
+Example:
+
+{
+    "repositories": [
+        "Rydzaki/Final_project_teatAPI",
+        "jtorralbaflores/Javier-Torralba-portfolio"
+    ]
+}
+
+
