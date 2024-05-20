@@ -5,7 +5,7 @@ This script is designed to track activity on GitHub by leveraging the GitHub Eve
 
 ### REST API Endpoints
 - `http://localhost:5001/statistics`
-- `http://localhost:5001/statistics?limit=3` (limit can be set from 1 to 5)
+- `http://localhost:5001/statistics?limit=3`
 
 ## Files in the Folder
 - `sql_part.py`
