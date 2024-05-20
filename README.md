@@ -109,4 +109,41 @@ Example:
     ]
 }
 
+Setup MySQL on Mac
+Install MySQL:
+
+brew install mysql
+Check your version (optional):
+
+mysql --version
+Login to MySQL:
+
+mysql -u username -p
+Create the database:
+
+CREATE DATABASE github_events_db;
+USE github_events_db;
+Running the Scripts
+Run sql_part.py to set up the database:
+
+python sql_part.py
+Verify the tables:
+
+SHOW TABLES;
+DESCRIBE events;
+DESCRIBE statistics;
+Running the App
+Ensure MySQL is running and accessible. Then run the app:
+
+python event_tracker.py
+
+
+##TODO
+ - Tests and possible refactoring
+ = Opportunity to add authentication (GitHub restriction of 60 no auth to 5000 auth approach)
+ = More modular code arrangement
+ = Better automation
+ = Using Docker and Kubernetes to deploy and manage the app
+ = Thinking of scalability
+
 
