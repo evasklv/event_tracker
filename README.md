@@ -88,7 +88,7 @@ Install the required Python modules using pip3:
 pip3 install aiohttp requests requests_cache certifi mysql-connector-python flask apscheduler python-dotenv pytest
 ```
 
-### A repositories.json file in the same directory should have the following structure:
+A repositories.json file in the same directory should have the following structure:
 
 ```sh
 {
@@ -100,8 +100,8 @@ pip3 install aiohttp requests requests_cache certifi mysql-connector-python flas
         "user5/repo5"
     ]
 }
-
-### Example:
+```
+Example:
 ```sh
 {
     "repositories": [
@@ -109,48 +109,51 @@ pip3 install aiohttp requests requests_cache certifi mysql-connector-python flas
         "jtorralbaflores/Javier-Torralba-portfolio"
     ]
 }
-
-### Setup MySQL on Mac
+```
+## Setup MySQL on Mac
 
 ```sh
 brew install mysql
-
-### Check your version (optional):
+```
+Check your version (optional):
 
 ```sh
 mysql --version
-
-### Login to MySQL:
+```
+Login to MySQL:
 
 ```sh
 mysql -u username -p
-
-### Create the database:
+```
+Create the database:
 
 ```sh
 CREATE DATABASE github_events_db;
 USE github_events_db;
+```
+Running the Scripts
 
-## Running the Scripts
-
-### Run sql_part.py:
+## Run sql_part.py:
 
 ```sh
 python sql_part.py
-
-### Verify the tables:
+```
+Verify the tables:
 
 ```sh
 SHOW TABLES;
 DESCRIBE events;
 DESCRIBE statistics;
-
-### Running the App
-Ensure MySQL is running and accessible. Then run the app:
+```
+Check previous steps:
+1. Ensure the MySQL server is running and accessible.
+2. Set up the environment variables in the .env file.
+3. Ensure the repositories.json file is present and correctly formatted.
+4. Run the App:
 
 ```sh
 python event_tracker.py
-
+```
 
 ## TODO
  - Tests and possible refactoring
