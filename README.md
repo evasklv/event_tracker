@@ -12,22 +12,36 @@ repositories.json
 
 sql_part.py 
 Creating a database connection - get_db_connection()
+
 Creating tables - _create_tables()
+
 Create indexes if doesn’t exist - _create_indexes()
+
 Cleaning old events - clean_old_events()
 
 event_tracker.py - contains the rest of the application logic:
 logging - Set up logging 
+
 requests_cache - Configure cache
+
 app = Flask(__name__) - Set up Flask
+
 _fetch_events() - Making GitHub API request
+
 _process_and_store_events() - Process and store the events
+
  _store_in_database() - Save events into database
+ 
 _calculate_and_store_statistics() - Calculate and store the statistics
+
 get_statistics() - Get the statistics
+
 _load_repositories_config() - Load a config with repositories
+
 _process_events_periodically() - Retrieve the configuration
+
 _start_scheduled_tasks() - Manage scheduled tasks
+
 main() - launching the app
 
 
@@ -52,6 +66,7 @@ Database schema:
 
 Indexes
 * idx_event_time on event_time column in events table.
+* 
 * idx_statistics_repo_event on repo_name and event_type columns in statistics table.
 
 Flask Endpoints
